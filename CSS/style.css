@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500..700;1,500..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('color.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+body{
+    background-color: var(--Cream);
+
+}
+
+.container{
+    font-family: 'montserrat', sans-serif;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.center{
+    margin: 5rem 20rem;
+
+}
+.info{
+    width: 20rem;
+    height: 27rem;
+    background-color: var(--White);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2rem;
+   }
+img{
+    width: 20rem;
+    height: 27rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.info span{
+    text-transform: uppercase;
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 1rem;
+}
+h1{
+    font-family:'Fraunces',sans-serif ;
+    margin: 1rem 0 1rem 0;
+
+}
+small{
+    color: var(--Dark-grayish-blue);
+
+}
+.prize{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.prize h1{
+    font-family:'Fraunces',sans-serif ;
+    color: var(--Dark-cyan);
+}
+.prize h5{
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+    font-weight: lighter;
+}
+
+button{
+    background-color: var(--Dark-cyan);
+    width: 15rem;
+    height: 3rem;
+    color: var(--White);
+    border-radius: 8px;
+}
+
+
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
