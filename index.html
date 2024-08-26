@@ -14,21 +14,7 @@
 
 <body>
   <div class="container center">
-    <!-- <div class="preparation-time">
-      <h3>Preparation time</h3>
-      <ul>
-        <li>
-          <small><strong>Total</strong>: Approximately 10 minutes</small>
-        </li>
-        <li>
-          <small><strong>Preparation</strong>:5 minutes</small>
-        </li>
-        <li>
-          <small><strong>Cooking</strong>:5 minutes</small>
-        </li>
-      </ul>
-    </div> -->
-    <img src="images/image-product-desktop.jpg" alt="">
+    <img id="monImage" src="images/image-product-desktop.jpg" alt="perfume">
     <div class="info">
       <span>Perfume</span>
 
@@ -57,6 +43,27 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">SORO KIYALI KONE</a>.
   </div>
+  <script>
+    window.onload = function () {
+      let imageElement = document.getElementById('monImage');
+
+      if (window.innerWidth <= 768) {
+        imageElement.src = 'images/image-product-mobile.jpg';
+      } else {
+        imageElement.src = 'images/image-product-desktop.jpg';
+      }
+    };
+
+    window.onresize = function () {
+      let imageElement = document.getElementById('monImage');
+
+      if (window.innerWidth <= 768) {
+        imageElement.src = 'images/image-product-mobile.jpg';
+      } else {
+        imageElement.src = 'images/image-product-desktop.jpg';
+      }
+    };
+  </script>
 </body>
 
 </html>
